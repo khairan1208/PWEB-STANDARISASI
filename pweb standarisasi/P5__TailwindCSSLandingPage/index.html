@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page - Tailwind CSS v4</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <!-- 1. NAVBAR / HEADER -->
+    <header class="fixed top-0 left-0 w-full bg-white/80 backdrop-blur-md shadow-xs z-50">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold tracking-tight text-indigo-600">BrandPromotion</a>
+            
+            <nav class="hidden md:flex items-center gap-8 font-medium text-sm">
+                <a href="#" class="text-indigo-600 transition">Beranda</a>
+                <a href="#fitur" class="hover:text-indigo-600 transition">Fitur</a>
+                <a href="#tentang" class="hover:text-indigo-600 transition">Tentang</a>
+                <a href="#kontak" class="hover:text-indigo-600 transition">Kontak</a>
+            </nav>
+
+            <div>
+                <a href="#kontak" class="hidden md:inline-block bg-indigo-600 hover:bg-indigo-700 text-white px-5 py-2.5 rounded-full text-sm font-medium transition shadow-xs">
+                    Mulai Gratis
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="pt-32 pb-20 md:pt-44 md:pb-32 text-center px-6">
+        <div class="max-w-3xl mx-auto">
+            <span class="inline-block bg-indigo-50 text-indigo-600 text-xs font-semibold px-3 py-1 rounded-full mb-4">
+                ✨ Versi Terbaru Telah Dirilis
+            </span>
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 mb-6 leading-tight">
+                Solusi Digital Terbaik untuk Bisnis & Proyek Anda
+            </h1>
+            <p class="text-lg md:text-xl text-slate-600 mb-8">
+                Tingkatkan efisiensi kerja tim dan kembangkan bisnis Anda dengan platform modern yang cepat, aman, dan dirancang untuk hasil maksimal.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#fitur" class="bg-indigo-600 hover:bg-indigo-700 text-white font-medium px-8 py-3.5 rounded-xl transition shadow-md">
+                    Jelajahi Fitur
+                </a>
+                <a href="#tentang" class="bg-white hover:bg-slate-100 text-slate-700 border border-slate-200 font-medium px-8 py-3.5 rounded-xl transition">
+                    Pelajari Lebih Lanjut
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="fitur" class="py-20 bg-white px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold tracking-tight text-slate-900 mb-3">Fitur Unggulan</h2>
+                <p class="text-slate-600">Semua yang Anda butuhkan untuk mengelola proyek dengan sempurna.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+            
+                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-lg transition">
+                    <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center font-bold text-xl mb-6">⚡</div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Super Cepat</h3>
+                    <p class="text-slate-600 leading-relaxed">Dibangun di atas arsitektur modern untuk memastikan performa yang sangat ringan dan responsif.</p>
+                </div>
+            
+                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-lg transition">
+                    <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center font-bold text-xl mb-6">🔒</div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Keamanan Terjamin</h3>
+                    <p class="text-slate-600 leading-relaxed">Sistem enkripsi tingkat tinggi untuk melindungi seluruh data pribadi dan aset bisnis Anda.</p>
+                </div>
+            
+                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-lg transition">
+                    <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center font-bold text-xl mb-6">💬</div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Dukungan 24/7</h3>
+                    <p class="text-slate-600 leading-relaxed">Tim support profesional kami selalu siap membantu Anda kapan pun kendala terjadi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tentang" class="py-20 px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-3xl font-bold tracking-tight text-slate-900 mb-4">Tentang Kami</h2>
+                <p class="text-slate-600 mb-4 leading-relaxed">
+                    Kami adalah tim inovator yang berfokus pada pengembangan solusi digital berkualitas tinggi guna mempermudah transformasi digital berbagai skala usaha.
+                </p>
+                <p class="text-slate-600 mb-6 leading-relaxed">
+                    Dengan pengalaman bertahun-tahun di industri teknologi, kami berkomitmen untuk terus menghadirkan standar kenyamanan dan keamanan terbaik bagi pengguna.
+                </p>
+                <a href="#kontak" class="text-indigo-600 font-semibold hover:underline">Hubungi tim kami &rarr;</a>
+            </div>
+            <div class="bg-slate-200 h-80 rounded-2xl flex items-center justify-center text-slate-400 font-medium">
+                [ Ilustrasi / Gambar Placeholder ]
+            </div>
+        </div>
+    </section>
+
+    <footer id="kontak" class="bg-slate-900 text-slate-400 py-12 px-6 text-center">
+        <div class="max-w-7xl mx-auto">
+            <h3 class="text-white text-lg font-bold mb-2">BrandLogo</h3>
+            <p class="text-sm mb-6">Membantu bisnis Anda tumbuh lebih cepat di era digital.</p>
+            <p class="text-xs text-slate-500">&copy; 2026 BrandLogo. Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

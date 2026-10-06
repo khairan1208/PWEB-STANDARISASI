@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Konversi Suhu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="app">
+        <section class="intro">
+            <p class="eyebrow">Studi Kasus JavaScript Fundamental</p>
+            <h1>Kalkulator Konversi Suhu</h1>
+            <p>Masukkan suhu dalam satuan Celsius. JavaScript akan menghitung konversi ke Fahrenheit, Reamur, Kelvin, serta menentukan kategori suhunya.</p>
+        </section>
+
+        <section class="panel">
+            <form id="formSuhu">
+                <div class="grid">
+                    <div>
+                        <label for="celsius">Suhu (Celsius)</label>
+                        <input id="celsius" type="number" step="any" value="25" required>
+                    </div>
+                </div>
+                <button type="submit">Hitung Konversi</button>
+            </form>
+
+            <article id="hasil" class="result">
+                <h2>Hasil Perhitungan</h2>
+                <p>Klik tombol <strong>Hitung Konversi</strong> untuk melihat hasil.</p>
+            </article>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
